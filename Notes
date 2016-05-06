@@ -1,0 +1,29 @@
+Notes
+
+# Models:
+1. ## Location
+  ### Name
+  ### Address
+  ### Notes
+
+  has_many students
+
+2. ## Student
+  ### First Name
+  ### Last Name
+  ### Grade Level
+  ### Availability
+  ### Notes
+
+  has_many locations
+
+Join table student_locations
+
+TO DO
+1. git
+2. bundle install
+3. set up google maps API key
+  https://console.developers.google.com/apis/api/maps_embed_backend/overview?project=student-map-1300
+4. tests
+
+
