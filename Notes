@@ -20,7 +20,6 @@ Notes
 Join table student_locations
 
 TO DO
-1. migrations
 2. models
 3. render basic page
 4. tests

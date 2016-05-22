@@ -8,6 +8,3 @@ This shows a map of tutoring locations.  Tutors are able to view the closest loc
 * Rails 4.2.3
 * Google Maps Javascript API
 
-
-TODO: Use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
