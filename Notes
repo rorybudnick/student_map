@@ -20,10 +20,11 @@ Notes
 Join table student_locations
 
 TO DO
-1. git
-2. bundle install
-3. set up google maps API key
-  https://console.developers.google.com/apis/api/maps_embed_backend/overview?project=student-map-1300
+1. migrations
+2. models
+3. render basic page
 4. tests
+5. TODO: Use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
 
 
