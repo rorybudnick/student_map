@@ -1,11 +1,10 @@
-// var locations = $('.locations_information').data('locations')
 function initMap(){
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 10,
     center: new google.maps.LatLng(34.052, -118.244),
   });
-
-  var locations = [["Los Angeles Center", 34.052, -118.244]]
+  var locations = $('.locations_information').data('locations')
+  debugger;
   // var infowindow = new google.maps.InfoWindow();
   var marker, i;
   for (i = 0; i < locations.length; i++) {  

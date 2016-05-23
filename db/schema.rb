@@ -17,15 +17,17 @@ ActiveRecord::Schema.define(version: 20160522212837) do
   enable_extension "plpgsql"
 
   create_table "locations", force: :cascade do |t|
-    t.string   "name"
+    t.string   "name",                                null: false
     t.string   "street"
     t.string   "street_2"
     t.string   "city"
     t.string   "state"
-    t.string   "country"
+    t.string   "zip_code"
     t.text     "notes"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.decimal  "latitude",   precision: 10, scale: 6
+    t.decimal  "longitude",  precision: 10, scale: 6
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
   end
 
   create_table "locations_students", id: false, force: :cascade do |t|

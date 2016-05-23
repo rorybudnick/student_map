@@ -1,29 +1,7 @@
-Notes
-
-# Models:
-1. ## Location
-  ### Name
-  ### Address
-  ### Notes
-
-  has_many students
-
-2. ## Student
-  ### First Name
-  ### Last Name
-  ### Grade Level
-  ### Availability
-  ### Notes
-
-  has_many locations
-
-Join table student_locations
-
-TO DO
-2. models
-3. render basic page
-4. tests
-5. TODO: Use a different markup language if you do not plan to run
+TODO
+1. TODO: Use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+2. Readme
+3. Setting Lat Long after location creation, prob move to model-- figure out rake task too
 
 
