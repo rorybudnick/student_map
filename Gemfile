@@ -49,3 +49,10 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.4'
 end
 
+# For heroku
+group :production do
+  gem 'rails_12factor'
+end
+
+ruby "2.3.0"
+

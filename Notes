@@ -1,7 +1,9 @@
 TODO
+6. Location info needs to pop up on click
+3. Setting Lat Long after location creation, prob move to model-- figure out rake task too
 1. TODO: Use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 2. Readme
-3. Setting Lat Long after location creation, prob move to model-- figure out rake task too
-
+4. Geolocation
+5. Student Info
 
