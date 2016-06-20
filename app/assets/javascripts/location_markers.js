@@ -4,21 +4,36 @@ function initMap(){
     center: new google.maps.LatLng(34.052, -118.244),
   });
   var locations = $('.locations_information').data('locations')
-  debugger;
-  // var infowindow = new google.maps.InfoWindow();
+  var studentCounts = $('.locations_information').data('students')
   var marker, i;
-  for (i = 0; i < locations.length; i++) {  
+  for (i = 0; i < locations.length; i++) {
+    currentLocation = locations[i]
     marker = new google.maps.Marker({
-      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-      title: locations[i][0]
+      position: new google.maps.LatLng(locations[i].latitude, locations[i].longitude),
+      title: currentLocation.name,
+      customInfo: studentCounts[i]
     });
     marker.setMap(map);
 
-    // google.maps.event.addListener(marker, 'click', (function(marker, i) {
-    //   return function() {
-    //     infowindow.setContent(locations[i][0]);
-    //     infowindow.open(map, marker);
-    //   }
-    // })(marker, i));
+
+
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+      return function() {
+        var infoWindow = new google.maps.InfoWindow();
+        var infoText = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h3 id="firstHeading" class="firstHeading">' +
+          marker.title +
+          '</h3>'+
+          '<div id="bodyContent">'+
+          '<p>'+
+          marker.customInfo +
+          '</p>'+
+          '</div>';
+        infoWindow.setContent(infoText);
+        infoWindow.open(map, marker);
+      }
+    })(marker, i));
   }
 }

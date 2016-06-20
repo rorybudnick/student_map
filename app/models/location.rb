@@ -16,4 +16,9 @@
 
 class Location < ActiveRecord::Base
   has_and_belongs_to_many :students
+
+  def formatted_student_count
+    "#{self.students.count} Students"
+  end
+
 end

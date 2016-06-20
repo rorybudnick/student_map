@@ -1,6 +1,7 @@
 class LocationsController < ApplicationController
   def index
-    @locations = Location.select(:latitude, :longitude, :name).map{ |location| [location.name, location.latitude, location.longitude]}
+    @locations = Location.all
+    @students = @locations.map{ |location| location.formatted_student_count }
   end
 
   def create
