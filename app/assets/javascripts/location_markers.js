@@ -7,11 +7,17 @@ function initMap(){
   var studentCounts = $('.locations_information').data('students')
   var marker, i;
   for (i = 0; i < locations.length; i++) {
-    currentLocation = locations[i]
+    var currentLocation = locations[i]
+    if (currentLocation.street_2){
+      var formattedStreet = currentLocation.street + "\n" + currentLocation.street_2
+    } else {
+      var formattedStreet = currentLocation.street + "\n"
+    }
     marker = new google.maps.Marker({
       position: new google.maps.LatLng(locations[i].latitude, locations[i].longitude),
       title: currentLocation.name,
-      customInfo: studentCounts[i]
+      studentCount: studentCounts[i],
+      street: formattedStreet
     });
     marker.setMap(map);
 
@@ -27,8 +33,11 @@ function initMap(){
           marker.title +
           '</h3>'+
           '<div id="bodyContent">'+
-          '<p>'+
-          marker.customInfo +
+          '<p><i>'+
+          marker.street +
+          '</i></p>' +
+          '<p>' +
+          marker.studentCount +
           '</p>'+
           '</div>';
         infoWindow.setContent(infoText);

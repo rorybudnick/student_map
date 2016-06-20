@@ -9,7 +9,6 @@ TODO
 
 
 1) Geolocation a.k.a. a marker where you are located(this is a quick one)
-2) More information about the site when you click on it-- right now you can only get the name when you hover.  I think student count might make sense here.
 3) Student info: not sure where to put this.  Seems like a lot to see on click if there end up being many students.  Maybe a link from the location info that eventually comes up on click.
 4) Header/Title with School on Wheels logo
 5) Potentially a log in system-- even if it's 1 shared username/password, just as a wall
