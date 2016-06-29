@@ -2,14 +2,14 @@
 #
 # Table name: students
 #
-#  id           :integer          not null, primary key
-#  first_name   :string
-#  last_name    :string
-#  grade        :string
-#  availability :string
-#  notes        :text
-#  created_at   :datetime         not null
-#  updated_at   :datetime         not null
+#  id             :integer          not null, primary key
+#  first_name     :string
+#  last_name      :string
+#  grade          :string
+#  days_and_times :jsonb
+#  notes          :text
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
 #
 
 class Student < ActiveRecord::Base

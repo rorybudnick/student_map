@@ -3,13 +3,15 @@
 # Table name: locations
 #
 #  id         :integer          not null, primary key
-#  name       :string
+#  name       :string           not null
 #  street     :string
 #  street_2   :string
 #  city       :string
 #  state      :string
-#  country    :string
+#  zip_code   :string
 #  notes      :text
+#  latitude   :decimal(10, 6)
+#  longitude  :decimal(10, 6)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
