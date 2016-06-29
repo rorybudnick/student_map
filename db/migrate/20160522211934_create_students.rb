@@ -4,7 +4,7 @@ class CreateStudents < ActiveRecord::Migration
       t.string :first_name
       t.string :last_name
       t.string :grade
-      t.string :availability
+      t.jsonb :days_and_times, default: '{}'
       t.text :notes
       t.timestamps null: false
     end

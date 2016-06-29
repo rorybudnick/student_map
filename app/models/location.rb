@@ -20,5 +20,4 @@ class Location < ActiveRecord::Base
   def formatted_student_count
     "#{self.students.count} Students"
   end
-
 end
