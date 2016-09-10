@@ -3,14 +3,10 @@ To Do
 2. Geolocation a.k.a. a marker where you are located(this is a quick one)
 3. Student info: not sure where to put this.  Seems like a lot to see on click if there end up being many students.  Maybe a link from the location info that eventually comes up on click.
 4. Header/Title with School on Wheels logo
-5. Log in system-- even if it's 1 shared username/password, just as a wall
+5. Log in system/Create account ability
 6. A better URL-- I'll look into cheap options
 7. Readme
 8. TODO: Use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 9. Admin ability to create students/locations
 10. Ability to import students/locations
-
-Tonight
-1. 
-2. Deploy changes
