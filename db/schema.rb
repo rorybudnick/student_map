@@ -42,10 +42,10 @@ ActiveRecord::Schema.define(version: 20160522212837) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "grade"
-    t.jsonb    "days_and_times", default: {}
+    t.text     "days_and_times", default: "{}"
     t.text     "notes"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
   end
 
 end

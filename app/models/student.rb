@@ -6,7 +6,7 @@
 #  first_name     :string
 #  last_name      :string
 #  grade          :string
-#  days_and_times :jsonb
+#  days_and_times :text
 #  notes          :text
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
