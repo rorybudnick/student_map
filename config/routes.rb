@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'locations#index'
+  resources :locations, only: [:index, :create] do
+  end
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
