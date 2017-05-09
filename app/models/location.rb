@@ -19,6 +19,8 @@
 class Location < ActiveRecord::Base
   has_and_belongs_to_many :students
 
+  validates :name, presence: true, uniqueness: true
+
   def formatted_student_count
     "#{self.students.count} Students"
   end

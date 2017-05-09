@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :locations, only: [:index, :create] do
   end
+  root "pages#main"
 
 
   # Example of regular route:
